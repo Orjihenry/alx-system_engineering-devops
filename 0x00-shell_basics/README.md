@@ -5,3 +5,5 @@ The 'ls' command lists all files and directories present in working dir or speci
 'cd ~' changes the working dir to the user's home dir.
 
 'ls -l' lists all files and directories in a long format
+
+'ls -la' list all files and directories (including hidden files or directories) of current working dir or specified dir
