@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Stops the 7-highlander loop using pkill.
 
-kill "$(pgrep -f 7-highlander)"
+kill -9 "$(pgrep -f highlander)"
