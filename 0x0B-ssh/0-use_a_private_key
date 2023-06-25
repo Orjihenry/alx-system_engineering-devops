@@ -1,4 +1,4 @@
-#!/usr/bin/env bashi
+#!/usr/bin/env bash
 # Script that uses ssh to connect to your server
 # using the private key ~/.ssh/school with user ubuntu
 
