@@ -13,13 +13,13 @@ sudo mkdir -p /var/www/html
 sudo chmod -R 755 /var/www
 
 #  create the index page
-echo 'Hello World!' |sudo tee  /var/www/html/index.html
+echo 'Hello World!' | sudo tee  /var/www/html/index.html
 
 # create error 404 webpage
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 
 # config redirect for a single page(/redirect_me) and add header to display hostname
-string_for_replacement="server_name _;\n\tadd_header X-Served-By \$hostname;\n\trewrite ^\/redirect_me https:\/\/www.blog.ehoneahobed.com permanent;"
+string_for_replacement="server_name _;\n\tadd_header X-Served-By \$hostname;\n\trewrite ^\/redirect_me https:\/\/www.henryorjiude.online permanent;"
 sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
 # config redirect for 404 error page
