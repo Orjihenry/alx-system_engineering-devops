@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# debugging nginx port 80
+# Remove default file and replaces it by creating a symbolic link
+# Then restart nginx
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
