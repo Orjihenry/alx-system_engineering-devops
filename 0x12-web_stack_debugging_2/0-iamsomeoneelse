@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Accepts one arg & passes arg as user if arg is present.
+
+sudo -u "$1" whoami
